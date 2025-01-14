@@ -1,0 +1,215 @@
+/* Styles généraux */
+*{
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #444;
+}
+
+/* Première partie : Choix des contributions et paiement */
+#contribution-options {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.option {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    flex: 1 1 calc(20% - 30px);
+    min-width: 150px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.option h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.option p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.select-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.select-button:hover {
+    background-color: #0056b3;
+}
+
+.payment-method {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment-method select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.pay-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pay-button:hover {
+    background-color: #218838;
+}
+
+/* Deuxième partie : Explication des paliers */
+#tiers-explanation {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tier {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tier:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tier img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.tier h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.tier p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Troisième partie : Liste des contributeurs */
+#contributors-list {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+/* Style du bouton "Retour à l'accueil" */
+.home-button {
+    display: inline-block;
+    background-color: #007bff; /* Couleur de fond bleue */
+    color: #fff; /* Texte blanc */
+    padding: 12px 24px; /* Espacement interne */
+    border-radius: 30px; /* Coins très arrondis pour un look moderne */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    font-size: 1em;
+    font-weight: 500; /* Texte légèrement gras */
+    margin: 20px;
+    transition: all 0.3s ease; /* Animation fluide pour tous les effets */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    border: 2px solid transparent; /* Bordure transparente */
+    position: relative; /* Pour l'effet de survol */
+    overflow: hidden; /* Cache le débordement de l'effet de survol */
+}
+
+/* Effet de survol */
+.home-button:hover {
+    background-color: #0056b3; /* Couleur de fond plus foncée */
+    transform: translateY(-3px); /* Légère élévation */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+}
+
+/* Effet de clic */
+.home-button:active {
+    transform: translateY(0); /* Retour à la position initiale */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre réduite */
+}
+
+/* Effet de bordure animée au survol */
+.home-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.1); /* Lueur blanche */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    z-index: 0;
+}
+
+.home-button:hover::before {
+    transform: translate(-50%, -50%) scale(1); /* Agrandit l'effet de lueur */
+}
+
+/* Texte du bouton */
+.home-button span {
+    position: relative;
+    z-index: 1; /* Place le texte au-dessus de l'effet de lueur */
+}
