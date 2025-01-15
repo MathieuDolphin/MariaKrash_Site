@@ -16,27 +16,27 @@
     <section id="contribution-options">
         <h2>Choisissez votre contribution</h2>
         <div class="pricing-options">
-            <div class="option">
+            <div class="option" data-amount="10">
                 <h3>10€</h3>
                 <p>Contribution de base</p>
                 <button class="select-button">Sélectionner</button>
             </div>
-            <div class="option">
+            <div class="option" data-amount="25">
                 <h3>25€</h3>
                 <p>Contribution standard</p>
                 <button class="select-button">Sélectionner</button>
             </div>
-            <div class="option">
+            <div class="option" data-amount="50">
                 <h3>50€</h3>
                 <p>Contribution premium</p>
                 <button class="select-button">Sélectionner</button>
             </div>
-            <div class="option">
+            <div class="option" data-amount="100">
                 <h3>100€</h3>
                 <p>Contribution VIP</p>
                 <button class="select-button">Sélectionner</button>
             </div>
-            <div class="option">
+            <div class="option" data-amount="200">
                 <h3>200€</h3>
                 <p>Contribution exclusive</p>
                 <button class="select-button">Sélectionner</button>
@@ -44,12 +44,12 @@
         </div>
         <div class="payment-method">
             <h3>Méthode de paiement</h3>
-            <select>
+            <select id="payment-method">
                 <option value="credit-card">Carte de crédit</option>
                 <option value="paypal">PayPal</option>
                 <option value="bank-transfer">Virement bancaire</option>
             </select>
-            <button class="pay-button">Payer maintenant</button>
+            <button class="pay-button" id="pay-now">Payer maintenant</button>
         </div>
     </section>
 
@@ -58,7 +58,7 @@
         <h2>Les paliers de contributions</h2>
         <div class="tier">
             <img src="images/tier1.jpg" alt="Paliers 1">
-            <h3>Paliers 1 : 10€</h3>
+            <h3>Paliers  1 : 10€</h3>
             <p>Description du premier palier avec ses avantages.</p>
         </div>
         <div class="tier">
@@ -94,5 +94,8 @@
             <li>Lucie Petit - 200€</li>
         </ul>
     </section>
+
+    <!-- Lien vers le fichier JavaScript externe -->
+    <script src="js/contri-script.js"></script>
 </body>
 </html>

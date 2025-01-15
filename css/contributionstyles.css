@@ -1,6 +1,6 @@
 /* Styles généraux */
 *{
-    
+    text-decoration: none;
 }
 
 body {
@@ -101,6 +101,15 @@ h2 {
 
 .pay-button:hover {
     background-color: #218838;
+}
+
+.option {
+    transition: background-color 0.3s;
+}
+
+.option.selected {
+    background-color: #f0f0f0; /* Couleur de fond pour l'option sélectionnée */
+    border: 2px solid #007bff; /* Bordure pour l'option sélectionnée */
 }
 
 /* Deuxième partie : Explication des paliers */
