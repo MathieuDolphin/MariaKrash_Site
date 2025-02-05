@@ -121,7 +121,6 @@ nav a:focus {
 }
 
 
-/* ...existing code... */
 
 .content-game {
     display: flex;
@@ -145,13 +144,19 @@ nav a:focus {
     margin: 10px;
 }
 
-.game-video {
+.video-container {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    max-width: 600px;
     margin-top: 20px;
 }
 
-/* ...existing code... */
+.game-video {
+    width: 45%;
+    height: auto;
+}
+
+
 
 
 /* Styles pour les écrans de moins de 768px (tablettes et mobiles) */
