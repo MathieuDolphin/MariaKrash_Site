@@ -23,9 +23,10 @@ header img {
     object-fit: cover;
 }
 
+
 header nav {
     position: absolute;
-    top: 0;
+    top: 20px; /* Move the navbar down */
     left: 0;
     right: 0;
     display: flex;
@@ -34,14 +35,15 @@ header nav {
 }
 
 header nav a {
-    color: rgb(0, 0, 0);
+    color: white; /* Change text color to white */
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
 }
 
+
 header h1 {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
 }
@@ -63,19 +65,19 @@ section {
 
 
 nav a {
-    outline: 2px solid #007BFF; 
+    outline: 2px solid #1c1d1f; 
     outline-offset: 3px; 
     border-radius: 3px; 
-    background-color: #007BFF; 
+    background-color: #1f2122; 
     color: white; 
     padding: 5px 10px; 
-    text-decoration: none; /
+    text-decoration: none;
 }
 
 /* Style au survol */
 nav a:hover {
-    outline-color: #0056b3; 
-    background-color: #0056b3; 
+    outline-color: #56585c; 
+    background-color: #5e6061; 
 }
 
 /* Style au focus (pour l'accessibilité) */

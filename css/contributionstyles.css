@@ -64,7 +64,7 @@ h2 {
 }
 
 .select-button {
-    background-color: #007bff;
+    background-color: #1f2122;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -146,7 +146,7 @@ h2 {
 }
 
 .tier h3 {
-    margin: 0;
+    margin: 0 10px 10px 0; /* Add bottom margin to create space */
     font-size: 1.2em;
     color: #007bff;
 }
@@ -170,7 +170,7 @@ h2 {
 /* Style du bouton "Retour à l'accueil" */
 .home-button {
     display: inline-block;
-    background-color: #007bff; /* Couleur de fond bleue */
+    background-color: #1f2122; /* Couleur de fond bleue */
     color: #fff; /* Texte blanc */
     padding: 12px 24px; /* Espacement interne */
     border-radius: 30px; /* Coins très arrondis pour un look moderne */
